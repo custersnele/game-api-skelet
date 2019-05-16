@@ -7,7 +7,7 @@ CREATE TABLE `games` (
 );
 
 CREATE TABLE `game_evaluations` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `evaluatedBy` varchar(255) DEFAULT NULL,
   `motivation` varchar(255)  DEFAULT NULL,
   `score` int(11) NOT NULL,
@@ -16,11 +16,3 @@ CREATE TABLE `game_evaluations` (
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_game_id` FOREIGN KEY (`game_id`) REFERENCES `games` (`id`)
 );
-
-
-
-CREATE TABLE `hibernate_sequence` (
-  `next_val` bigint(20) DEFAULT NULL
-);
-
-create sequence `hibernate_sequence`;

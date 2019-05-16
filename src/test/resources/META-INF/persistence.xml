@@ -6,8 +6,8 @@
     <persistence-unit name="games-pu-test" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <!-- add classes -->
-        <class>be.pxl.ja2.spel.model.GameEvaluation</class>
-        <class>be.pxl.ja2.spel.model.Game</class>
+        <class>be.pxl.ja2.game.model.GameEvaluation</class>
+        <class>be.pxl.ja2.game.model.Game</class>
 
         <properties>
             <!-- Configuring JDBC properties -->

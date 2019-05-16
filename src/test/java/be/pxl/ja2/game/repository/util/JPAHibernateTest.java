@@ -1,4 +1,4 @@
-package be.pxl.ja2.spel.repository.util;
+package be.pxl.ja2.game.repository.util;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -6,8 +6,6 @@ import org.junit.BeforeClass;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.io.FileNotFoundException;
-import java.sql.SQLException;
 
 public class JPAHibernateTest {
 
@@ -15,7 +13,7 @@ public class JPAHibernateTest {
     protected static EntityManager em;
 
     @BeforeClass
-    public static void init() throws FileNotFoundException, SQLException {
+    public static void init() {
         emf = Persistence.createEntityManagerFactory("games-pu-test");
         em = emf.createEntityManager();
     }
